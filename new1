@@ -1,0 +1,195 @@
+/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
+
+
+
+Running SonarQube...
+wrapper  | --> Wrapper Started as Console
+wrapper  | Using tick timer.
+wrapperp | server listening on port 32000.
+wrapper  | Command[0] : /usr/lib/jvm/jre-1.8.0-openjdk.x86_64
+wrapper  | Command[1] : -Djava.awt.headless=true
+wrapper  | Command[2] : -Xms3m
+wrapper  | Command[3] : -Xmx3m
+wrapper  | Command[4] : -Djava.library.path=./lib
+wrapper  | Command[5] : -classpath
+wrapper  | Command[6] : ../../lib/jsw/wrapper-3.2.3.jar:../../lib/sonar-application-5.3.jar
+wrapper  | Command[7] : -Dwrapper.key=DfnzsCwv8R1Iam48
+wrapper  | Command[8] : -Dwrapper.port=32000
+wrapper  | Command[9] : -Dwrapper.jvm.port.min=31000
+wrapper  | Command[10] : -Dwrapper.jvm.port.max=31999
+wrapper  | Command[11] : -Dwrapper.debug=TRUE
+wrapper  | Command[12] : -Dwrapper.pid=13225
+wrapper  | Command[13] : -Dwrapper.version=3.2.3
+wrapper  | Command[14] : -Dwrapper.native_library=wrapper
+wrapper  | Command[15] : -Dwrapper.cpu.timeout=10
+wrapper  | Command[16] : -Dwrapper.jvmid=1
+wrapper  | Command[17] : org.tanukisoftware.wrapper.WrapperSimpleApp
+wrapper  | Command[18] : org.sonar.application.App
+wrapper  | Launching a JVM...
+wrapper  | Signal trapped.  Details:
+wrapper  |   signal number=17 (SIGCHLD), source="unknown"
+wrapper  | Received SIGCHLD, checking JVM process status.
+wrapper  | JVM process exited with a code of 1, setting the wrapper exit code to 1.
+wrapper  | JVM exited while loading the application.
+jvm 1    | wrapper  | Unable to start JVM: Permission denied (13)
+wrapper  | JVM Restarts disabled.  Shutting down.
+wrapper  | <-- Wrapper Stopped
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running SonarQube...
+wrapper  | --> Wrapper Started as Console
+wrapper  | Using tick timer.
+wrapperp | server listening on port 32000.
+wrapper  | Command[0] : java
+wrapper  | Command[1] : -Djava.awt.headless=true
+wrapper  | Command[2] : -Xms3m
+wrapper  | Command[3] : -Xmx3m
+wrapper  | Command[4] : -Djava.library.path=./lib
+wrapper  | Command[5] : -classpath
+wrapper  | Command[6] : ../../lib/jsw/wrapper-3.2.3.jar:../../lib/sonar-application-5.3.jar
+wrapper  | Command[7] : -Dwrapper.key=1PTR0j89DBL_ICAS
+wrapper  | Command[8] : -Dwrapper.port=32000
+wrapper  | Command[9] : -Dwrapper.jvm.port.min=31000
+wrapper  | Command[10] : -Dwrapper.jvm.port.max=31999
+wrapper  | Command[11] : -Dwrapper.debug=TRUE
+wrapper  | Command[12] : -Dwrapper.pid=13524
+wrapper  | Command[13] : -Dwrapper.version=3.2.3
+wrapper  | Command[14] : -Dwrapper.native_library=wrapper
+wrapper  | Command[15] : -Dwrapper.cpu.timeout=10
+wrapper  | Command[16] : -Dwrapper.jvmid=1
+wrapper  | Command[17] : org.tanukisoftware.wrapper.WrapperSimpleApp
+wrapper  | Command[18] : org.sonar.application.App
+wrapper  | Launching a JVM...
+jvm 1    | WrapperManager class initialized by thread: main  Using classloader: sun.misc.Launcher$AppClassLoader@70dea4e
+jvm 1    | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+jvm 1    |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+jvm 1    |
+jvm 1    | Wrapper Manager: JVM #1
+jvm 1    | Running a 64-bit JVM.
+jvm 1    | Wrapper Manager: Registering shutdown hook
+jvm 1    | Wrapper Manager: Using wrapper
+jvm 1    | Load native library.  One or more attempts may fail if platform specific libraries do not exist.
+jvm 1    | Loading native library failed: libwrapper-linux-x86-64.so  Cause: java.lang.UnsatisfiedLinkError: no wrapper-linux-x86-64 in java.library.path
+jvm 1    | Loaded native library: libwrapper.so
+jvm 1    | Calling native initialization method.
+jvm 1    | Inside native WrapperManager initialization method
+jvm 1    | Java Version   : 1.8.0_161-b14 OpenJDK 64-Bit Server VM
+jvm 1    | Java VM Vendor : Oracle Corporation
+jvm 1    |
+jvm 1    | Control event monitor thread started.
+jvm 1    | Startup runner thread started.
+jvm 1    | WrapperManager.start(org.tanukisoftware.wrapper.WrapperSimpleApp@3f99bd52, args[]) called by thread: main
+jvm 1    | Communications runner thread started.
+jvm 1    | Open socket to wrapper...Wrapper-Connection
+jvm 1    | Opened Socket from 31000 to 32000
+jvm 1    | Send a packet KEY : 1PTR0j89DBL_ICAS
+jvm 1    | handleSocket(Socket[addr=/127.0.0.1,port=32000,localport=31000])
+wrapperp | accepted a socket from 127.0.0.1 on port 31000
+wrapperp | read a packet KEY : 1PTR0j89DBL_ICAS
+wrapper  | Got key from JVM: 1PTR0j89DBL_ICAS
+wrapperp | send a packet LOW_LOG_LEVEL : 0
+wrapperp | send a packet PING_TIMEOUT : 0
+wrapperp | send a packet PROPERTIES : (Property Values)
+wrapper  | Start Application.
+wrapperp | send a packet START : start
+jvm 1    | Received a packet LOW_LOG_LEVEL : 0
+jvm 1    | Wrapper Manager: LowLogLevel from Wrapper is 0
+jvm 1    | Received a packet PING_TIMEOUT : 0
+jvm 1    | PingTimeout from Wrapper is 0
+jvm 1    | Received a packet PROPERTIES : (Property Values)
+jvm 1    | Received a packet START : start
+jvm 1    | calling WrapperListener.start()
+jvm 1    | Waiting for WrapperListener.start runner thread to complete.
+jvm 1    | WrapperListener.start runner thread started.
+jvm 1    | WrapperSimpleApp: start(args) Will wait up to 2 seconds for the main method to complete.
+jvm 1    | WrapperSimpleApp: invoking main method
+jvm 1    | 2018.04.26 16:29:05 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[search]: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-3.b14.el6_9.x86_64/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/usr/bin/sonarqube-5.3/temp -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /tmp/sq-process6147454281206019721properties
+jvm 1    | Send a packet START_PENDING : 5000
+wrapperp | read a packet START_PENDING : 5000
+wrapper  | JVM signalled a start pending with waitHint of 5000 millis.
+jvm 1    | Send a packet START_PENDING : 5000
+jvm 1    | WrapperSimpleApp: start(args) end.  Main Completed=false, exitCode=null
+jvm 1    | WrapperListener.start runner thread stopped.
+jvm 1    | returned from WrapperListener.start()
+jvm 1    | Send a packet STARTED :
+jvm 1    | Startup runner thread stopped.
+wrapperp | read a packet START_PENDING : 5000
+wrapper  | JVM signalled a start pending with waitHint of 5000 millis.
+wrapperp | read a packet STARTED :
+wrapper  | JVM signalled that it was started.
+wrapperp | send a packet PING : ping
+jvm 1    | Received a packet PING : ping
+jvm 1    | Send a packet PING : ok
+wrapperp | read a packet PING : ok
+wrapper  | Got ping response from JVM
+jvm 1    | Wrapper Manager: ShutdownHook started
+jvm 1    | WrapperManager.stop(0) called by thread: Wrapper-Shutdown-Hook
+jvm 1    | Send a packet STOP : 0
+wrapperp | read a packet STOP : 0
+wrapper  | JVM requested a shutdown. (0)
+wrapper  | wrapperStopProcess(0) called.
+wrapper  | Sending stop signal to JVM
+wrapperp | send a packet STOP : NULL
+jvm 1    | Received a packet STOP :
+jvm 1    | Thread, Wrapper-Shutdown-Hook, handling the shutdown process.
+jvm 1    | calling listener.stop()
+jvm 1    | WrapperSimpleApp: stop(0)
+jvm 1    | returned from listener.stop() -> 0
+jvm 1    | shutdownJVM(0) Thread:Wrapper-Shutdown-Hook
+jvm 1    | Send a packet STOPPED : 0
+wrapperp | read a packet STOPPED : 0
+wrapper  | JVM signalled that it was stopped.
+jvm 1    | Closing socket.
+jvm 1    | Closed socket: java.net.SocketException: Socket closed
+wrapperp | socket read no code (closed?).
+wrapperp | server listening on port 32001.
+wrapper  | JVM exited normally.
+wrapper  | Signal trapped.  Details:
+wrapper  |   signal number=17 (SIGCHLD), source="unknown"
+wrapper  | Received SIGCHLD, checking JVM process status.
+wrapper  | JVM process exited with a code of 0, leaving the wrapper exit code set to 0.
+jvm 1    | Server daemon shut down
+jvm 1    | Wrapper Manager: ShutdownHook complete
+wrapper  | <-- Wrapper Stopped
