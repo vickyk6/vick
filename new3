@@ -1,0 +1,8 @@
+12:14:16.666 ERROR: Error during SonarQube Scanner execution
+12:14:16.666 ERROR: Unable to load component class org.sonar.batch.scan.ProjectLock
+12:14:16.666 ERROR: Caused by: Unable to load component class org.sonar.api.batch.bootstrap.ProjectReactor
+12:14:16.666 ERROR: Caused by: You must define the following mandatory properties for 'GuardianNext': sonar.projectName
+12:14:16.666 ERROR: 
+12:14:16.666 ERROR: Re-run SonarQube Scanner using the -X switch to enable full debug logging.
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succedeed?
+ERROR: SonarQube scanner exited with non-zero code: 1
