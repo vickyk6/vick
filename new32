@@ -1,0 +1,20 @@
+[Thu May 24 11:43:24 2018] [info] Loading certificate & private key of SSL-aware server 'vik.com:443'
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_pphrase.c(490): unencrypted RSA private key - pass phrase not required
+[Thu May 24 11:43:24 2018] [info] Configuring server for SSL protocol
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(412): Creating new SSL context (protocols: SSLv3, TLSv1, TLSv1.1, TLSv1.2)
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(633): Configuring permitted SSL ciphers [DEFAULT:!EXP:!SSLv2:!DES:!IDEA:!SEED:+3DES:!aNULL:!eNULL:!EXP]
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(361): Configuring TLS extension handling
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(764): Configuring RSA server certificate
+[Thu May 24 11:43:24 2018] [warn] RSA server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(810): Configuring RSA server private key
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(987): Custom DH parameters (2048 bits) for vik.com:443 loaded from /etc/ssl/certs/apache-selfsigned.crt
+[Thu May 24 11:43:24 2018] [info] Loading certificate & private key of SSL-aware server 'vik.com:443'
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_pphrase.c(490): unencrypted RSA private key - pass phrase not required
+[Thu May 24 11:43:24 2018] [info] Configuring server for SSL protocol
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(412): Creating new SSL context (protocols: SSLv3, TLSv1, TLSv1.1, TLSv1.2)
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(633): Configuring permitted SSL ciphers [DEFAULT:!EXP:!SSLv2:!DES:!IDEA:!SEED:+3DES:!aNULL:!eNULL:!EXP]
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(361): Configuring TLS extension handling
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(764): Configuring RSA server certificate
+[Thu May 24 11:43:24 2018] [warn] RSA server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(810): Configuring RSA server private key
+[Thu May 24 11:43:24 2018] [debug] ssl_engine_init.c(987): Custom DH parameters (2048 bits) for vik.com:443 loaded from /etc/ssl/certs/apache-selfsigned.crt
