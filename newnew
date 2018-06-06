@@ -1,0 +1,88 @@
+Started by user vikramkyama
+Building in workspace D:\jenkins install\workspace\AnsellCommons\AnsellCommons1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Checking out a fresh workspace because there's no workspace at D:\jenkins install\workspace\AnsellCommons\AnsellCommons1
+Cleaning local Directory .
+Checking out http://192.168.102.58:9080/svn/ansellCommons/Sourcecode/branch/version1.2 at revision '2018-06-06T10:39:26.991 +0530' --quiet
+Using sole credentials vikram.kyama/****** in realm ‘<http://192.168.102.58:9080> Subversion Repository’
+At revision 277
+
+No changes for http://192.168.102.58:9080/svn/ansellCommons/Sourcecode/branch/version1.2 since the previous build
+Run condition [Strings match] enabling prebuild for step [Trigger/call builds on other projects]
+Run condition [Strings match] enabling prebuild for step [Trigger/call builds on other projects]
+Run condition [Strings match] enabling prebuild for step [Trigger/call builds on other projects]
+Run condition [Strings match] enabling prebuild for step [Trigger/call builds on other projects]
+Run condition [Boolean condition] enabling prebuild for step [Trigger/call builds on other projects]
+Run condition [Boolean condition] enabling prebuild for step [Trigger/call builds on other projects]
+Parsing POMs
+Modules changed, recalculating dependency graph
+Established TCP socket on 59955
+[AnsellCommons1] $ java -cp "D:\jenkins install\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;D:\jenkins install\tools\hudson.tasks.Maven_MavenInstallation\maven\boot\plexus-classworlds-2.5.2.jar;D:\jenkins install\tools\hudson.tasks.Maven_MavenInstallation\maven/conf/logging" jenkins.maven3.agent.Maven35Main "D:\jenkins install\tools\hudson.tasks.Maven_MavenInstallation\maven" "D:\jenkins install\war\WEB-INF\lib\remoting-3.17.jar" "D:\jenkins install\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar" "D:\jenkins install\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar" 59955
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f D:\jenkins install\workspace\AnsellCommons\AnsellCommons1\pom.xml install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< app.ansell:ansellCommons >----------------------
+[INFO] Building ansellCommons Maven Webapp 1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/nimbusds/lang-tag/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/nimbusds/lang-tag/maven-metadata.xml (507 B at 211 B/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/nimbusds/nimbus-jose-jwt/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/nimbusds/nimbus-jose-jwt/maven-metadata.xml (4.1 kB at 7.2 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml (849 B at 1.5 kB/s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ansellCommons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ansellCommons ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 79 source files to D:\jenkins install\workspace\AnsellCommons\AnsellCommons1\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.242 s
+[INFO] Finished at: 2018-06-06T10:40:40+05:30
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project ansellCommons: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] -> [Help 1]
+[ERROR] 
+[JENKINS] Archiving D:\jenkins install\workspace\AnsellCommons\AnsellCommons1\pom.xml to app.ansell/ansellCommons/1.0/ansellCommons-1.0.pom
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+channel stopped
+Strings match run condition: string 1=[], string 2=[AdminPortal]
+Run condition [Strings match] preventing perform for step [Trigger/call builds on other projects]
+Strings match run condition: string 1=[], string 2=[cgop]
+Run condition [Strings match] preventing perform for step [Trigger/call builds on other projects]
+Strings match run condition: string 1=[AdminPortal], string 2=[AdminPortal]
+Run condition [Strings match] enabling perform for step [Trigger/call builds on other projects]
+Waiting for the completion of AnsellCommons » AdminPortal
+AnsellCommons » AdminPortal #26 completed. Result was FAILURE
+Build step 'Conditional step (single)' marked build as failure
+Strings match run condition: string 1=[], string 2=[AdminPortal]
+Run condition [Strings match] preventing perform for step [Builder to mark whether executed]
+Strings match run condition: string 1=[AdminPortal], string 2=[AdminPortal]
+Run condition [Strings match] enabling perform for step [Builder to mark whether executed]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${PROJECT_TO_BUILD2})
+Run condition [Boolean condition] preventing perform for step [Builder to mark whether executed]
+Strings match run condition: string 1=[], string 2=[cgop]
+Run condition [Strings match] preventing perform for step [Builder to mark whether executed]
+Strings match run condition: string 1=[AdminPortal], string 2=[cgop]
+Run condition [Strings match] preventing perform for step [Builder to mark whether executed]
+[Boolean condition] checking [false] against [^(1|y|yes|t|true|on|run)$] (origin token: ${PROJECT_TO_BUILD3})
+Run condition [Boolean condition] preventing perform for step [Builder to mark whether executed]
+Finished: FAILURE
