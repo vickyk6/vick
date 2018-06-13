@@ -1,0 +1,152 @@
+[Wed Jun 13 09:35:14 2018] [info] Loading certificate & private key of SSL-aware server 'vik.com:443'
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_pphrase.c(490): unencrypted RSA private key - pass phrase not required
+[Wed Jun 13 09:35:14 2018] [info] Configuring server for SSL protocol
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(412): Creating new SSL context (protocols: SSLv3, TLSv1, TLSv1.1, TLSv1.2)
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(633): Configuring permitted SSL ciphers [DEFAULT:!EXP:!SSLv2:!DES:!IDEA:!SEED:+3DES:!aNULL:!eNULL:!EXP]
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(361): Configuring TLS extension handling
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(764): Configuring RSA server certificate
+[Wed Jun 13 09:35:14 2018] [warn] RSA server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(810): Configuring RSA server private key
+[Wed Jun 13 09:35:14 2018] [info] Loading certificate & private key of SSL-aware server 'vik.com:443'
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_pphrase.c(490): unencrypted RSA private key - pass phrase not required
+[Wed Jun 13 09:35:14 2018] [info] Configuring server for SSL protocol
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(412): Creating new SSL context (protocols: SSLv3, TLSv1, TLSv1.1, TLSv1.2)
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(633): Configuring permitted SSL ciphers [DEFAULT:!EXP:!SSLv2:!DES:!IDEA:!SEED:+3DES:!aNULL:!eNULL:!EXP]
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(361): Configuring TLS extension handling
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(764): Configuring RSA server certificate
+[Wed Jun 13 09:35:14 2018] [warn] RSA server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Jun 13 09:35:14 2018] [debug] ssl_engine_init.c(810): Configuring RSA server private key
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149383 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149383 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149384 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149384 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149385 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149385 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149382 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149382 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149386 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149386 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149387 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149387 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149388 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149388 for (192.168.102.121)
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1909): proxy: grabbed scoreboard slot 0 in child 149389 for worker https://192.168.102.121:8080/crmsWeb/
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(1929): proxy: worker https://192.168.102.121:8080/crmsWeb/ already initialized
+[Wed Jun 13 09:35:14 2018] [debug] proxy_util.c(2025): proxy: initialized single connection worker 0 in child 149389 for (192.168.102.121)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Wed Jun 13 09:37:07 2018] [error] (13)Permission denied: proxy: HTTPS: attempt to connect to 192.168.X.X:8080 (192.168.X.X) failed
+[Wed Jun 13 09:37:07 2018] [error] ap_proxy_connect_backend disabling worker for (192.168.102.121)
+[Wed Jun 13 09:37:07 2018] [debug] proxy_util.c(2120): proxy: HTTPS: has released connection for (192.168.X.X)
+[Wed Jun 13 09:37:07 2018] [debug] ssl_engine_kernel.c(1894): OpenSSL: Write: SSL negotiation finished successfully
+[Wed Jun 13 09:37:07 2018] [info] [client X.X.X.X] Connection closed to child 0 with standard shutdown (server X.com:443)
+
+
+
+
+
+
+
+
+[Wed Jun 13 09:51:07 2018] [error] [client 192.168.X.X] SSL Proxy requested for 192.168.102.121:443 but not enabled [Hint: SSLProxyEngine]
+[Wed Jun 13 09:51:07 2018] [error] proxy: HTTPS: failed to enable ssl support for 192.168.102.121:8080 (192.168.X.X)
+[Wed Jun 13 09:51:07 2018] [debug] proxy_util.c(2120): proxy: HTTPS: has released connection for (192.168.X.X)
+[Wed Jun 13 09:51:07 2018] [debug] ssl_engine_kernel.c(1894): OpenSSL: Write: SSL negotiation finished successfully
+[Wed Jun 13 09:51:07 2018] [info] [client 192.168.X.X] Connection closed to child 0 with standard shutdown (server 192.168.X.X:443)
+
+
+
+[error] [client 192.168.X.X] SSL Proxy requested for 192.168.102.121:443 but not enabled [Hint: SSLProxyEngine] [error] proxy: HTTPS: failed to enable ssl support for 192.168.X.X:8080 (192.168.X.X) [debug] proxy_util.c(2120): proxy: HTTPS: has released connection for (192.168.X.X) [debug] ssl_engine_kernel.c(1894): OpenSSL: Write: SSL negotiation finished successfully[info] [client 192.168.X.X] Connection closed to child 0 with standard shutdown (server 192.168.X.X:443)
+
+
+
+
+
+
+
+
+
+
+
+
+
+[debug] ssl_engine_kernel.c(1913): OpenSSL: Exit: error in SSLv2/v3 read server hello A
+[info] [client 192.168.X.X] SSL Proxy connect failed
+[info] SSL Library Error: 336031996 error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+[info] [client 192.168.X.X] Connection closed to child 0 with abortive shutdown (server 192.168.X.X:443)
+[error] (502)Unknown error 502: proxy: pass request body failed to 192.168.X.X:8080 (192.168.X.X)
+[error] proxy: pass request body failed to 192.168.X.X:8080 (192.168.X.X) from 192.168.X.X ()
+[debug] proxy_util.c(2120): proxy: HTTPS: has released connection for (192.168.X.X)
+[debug] ssl_engine_kernel.c(1894): OpenSSL: Write: SSL negotiation finished successfully
+[info] [client 192.168.X.X] Connection closed to child 4 with standard shutdown (server 192.168.X.X:443)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[error] (502)Unknown error 502: proxy: pass request body failed to 192.168.X.X:8080 (192.168.X.X)
+[error] proxy: pass request body failed to 192.168.X.X:8080 (192.168.X.X) from 192.168.X.X ()
