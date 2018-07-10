@@ -1,0 +1,89 @@
+FailedConsole Output
+Started by user admin
+Building in workspace /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Checking out a fresh workspace because there's no workspace at /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03
+Cleaning local Directory .
+Checking out http://192.168.102.58:9080/svn/adminPortal/SourceCode/branch/version2.03 at revision '2018-07-10T16:15:34.785 +0530' --quiet
+Using sole credentials vikram.kyama/****** in realm ‘<http://192.168.102.58:9080> Subversion Repository’
+At revision 1857
+
+Using sole credentials vikram.kyama/****** in realm ‘<http://192.168.102.58:9080> Subversion Repository’
+Run condition [Strings match] enabling prebuild for step [Trigger/call builds on other projects]
+[Admin_Portal_2.03] $ /bin/sh -xe /tmp/jenkins5341861742968490119.sh
++ java -version
+openjdk version "1.8.0_171"
+OpenJDK Runtime Environment (build 1.8.0_171-b10)
+OpenJDK 64-Bit Server VM (build 25.171-b10, mixed mode)
++ whoami
+jenkins
+Strings match run condition: string 1=[Ansell_Commons_1.21], string 2=[Ansell_Commons_1.21]
+Run condition [Strings match] enabling perform for step [Trigger/call builds on other projects]
+Waiting for the completion of Admin_Portal » Ansell_Commons_1.21
+Admin_Portal » Ansell_Commons_1.21 #10 completed. Result was SUCCESS
+Build step 'Conditional step (single)' changed build result to SUCCESS
+Parsing POMs
+Established TCP socket on 39048
+[Admin_Portal_2.03] $ java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.12-alpha-1.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5/boot/plexus-classworlds-2.5.2.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5/conf/logging jenkins.maven3.agent.Maven35Main /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5 /var/cache/jenkins/war/WEB-INF/lib/remoting-3.23.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.12-alpha-1.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 39048
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/pom.xml install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.admin:adminPortal >------------------------
+[INFO] Building Admin Oline Portal 1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ adminPortal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ adminPortal ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 270 source files to /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/target/classes
+[WARNING] /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/src/main/java/com/admin/online/portal/authentication/CustomLdapAuthorityPopulator.java: Some input files use unchecked or unsafe operations.
+[WARNING] /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/src/main/java/com/admin/online/portal/authentication/CustomLdapAuthorityPopulator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ adminPortal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ adminPortal ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ adminPortal ---
+[INFO] No tests to run.
+[JENKINS] Recording test results[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.BuildInfoRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+
+[INFO] 
+[INFO] --- maven-war-plugin:3.0.0:war (default-war) @ adminPortal ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [adminPortal] in [/var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/target/adminPortal]
+[INFO] Processing overlay [ id app.ansell:ansellCommons]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/src/main/webapp]
+[INFO] Webapp assembled in [3978 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/target/adminPortal.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ adminPortal ---
+[INFO] Installing /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/target/adminPortal.war to /var/lib/jenkins/.m2/repository/com/admin/adminPortal/1.0/adminPortal-1.0.war
+[INFO] Installing /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/pom.xml to /var/lib/jenkins/.m2/repository/com/admin/adminPortal/1.0/adminPortal-1.0.pom
+[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.MavenArtifactArchiver$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.MavenFingerprinter$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.813 s
+[INFO] Finished at: 2018-07-10T16:18:04+05:30
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/pom.xml to com.admin/adminPortal/1.0/adminPortal-1.0.pom
+[JENKINS] Archiving /var/lib/jenkins/workspace/Admin_Portal/Admin_Portal_2.03/target/adminPortal.war to com.admin/adminPortal/1.0/adminPortal-1.0.war
+channel stopped
+[Admin_Portal_2.03] $ /bin/sh -xe /tmp/jenkins9176361817719341586.sh
++ sudo ssh -i /user/home/.ssh/id_rsa root@192.168.102.121 '/workspace/installed/tomcat-cgop-7.0.82/bin/shutdown.sh;sleep 10;rm -rf /workspace/installed/tomcat-cgop-7.0.82/webapps/adminPortal-1.0.war'
+sudo: sorry, you must have a tty to run sudo
+Build step 'Execute shell' marked build as failure
+Strings match run condition: string 1=[Ansell_Commons_1.21], string 2=[Ansell_Commons_1.21]
+Run condition [Strings match] enabling perform for step [Builder to mark whether executed]
+Finished: FAILURE
