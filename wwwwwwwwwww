@@ -1,0 +1,97 @@
+[javac] Compiling 450 source files to /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/build/classes
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/dao/impl/BTDDDAO.java:1240: warning: unmappable character for encoding UTF8
+    [javac] 	 * 6. �Empty Data� should be copied over from one product group to another when the copy function is performed.
+    [javac] 	      ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/dao/impl/BTDDDAO.java:1240: warning: unmappable character for encoding UTF8
+    [javac] 	 * 6. �Empty Data� should be copied over from one product group to another when the copy function is performed.
+    [javac] 	                 ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/controller/DashboardController.java:98: warning: com.sun.org.apache.bcel.internal.generic.ICONST is internal proprietary API and may be removed in a future release
+    [javac] import com.sun.org.apache.bcel.internal.generic.ICONST;
+    [javac]                                                ^
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/transport/UsernamePasswordCredentialsProvider.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/Git.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/GitAPIException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/InvalidRemoteException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/TransportException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/AuthenticationContext.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/AuthenticationResult.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/ClientCredential.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/webServiceSecurity/Protector.java:9: warning: sun.misc.BASE64Decoder is internal proprietary API and may be removed in a future release
+    [javac] import sun.misc.BASE64Decoder;
+    [javac]                ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/webServiceSecurity/Protector.java:10: warning: sun.misc.BASE64Encoder is internal proprietary API and may be removed in a future release
+    [javac] import sun.misc.BASE64Encoder;
+    [javac]                ^
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/transport/CredentialsProvider.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/CloneCommand.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/TransportCommand.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/GitCommand.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/PullCommand.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/PullResult.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/WrongRepositoryStateException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/InvalidConfigurationException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/DetachedHeadException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/CanceledException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/RefNotFoundException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/RefNotAdvertisedException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/org.eclipse.jgit-4.4.1.201607150455-r.jar(org/eclipse/jgit/api/errors/NoHeadException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/AsymmetricKeyCredential.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/ClientAssertion.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/AdalAuthorizatonGrant.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/UserInfo.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] warning: /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/WebContent/WEB-INF/lib/adal4j-1.2.0.jar(com/microsoft/aad/adal4j/AuthenticationCallback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+    [javac] It is recommended that the compiler be upgraded.
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/CommonUtilities.java:133: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+    [javac] cast to java.lang.Class<?> for a varargs call
+    [javac] cast to java.lang.Class<?>[] for a non-varargs call and to suppress this warning
+    [javac] 							Method m = s.getClass().getMethod(targetMethodName, null);
+    [javac] 							                                                    ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/Utility.java:1267: warning: sun.misc.BASE64Encoder is internal proprietary API and may be removed in a future release
+    [javac] 		sun.misc.BASE64Encoder encoder = new sun.misc.BASE64Encoder();
+    [javac] 		        ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/Utility.java:1267: warning: sun.misc.BASE64Encoder is internal proprietary API and may be removed in a future release
+    [javac] 		sun.misc.BASE64Encoder encoder = new sun.misc.BASE64Encoder();
+    [javac] 		                                             ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/Utility.java:1295: warning: sun.misc.BASE64Decoder is internal proprietary API and may be removed in a future release
+    [javac] 		sun.misc.BASE64Decoder decoder = new sun.misc.BASE64Decoder();
+    [javac] 		        ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/Utility.java:1295: warning: sun.misc.BASE64Decoder is internal proprietary API and may be removed in a future release
+    [javac] 		sun.misc.BASE64Decoder decoder = new sun.misc.BASE64Decoder();
+    [javac] 		                                             ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/webServiceSecurity/Protector.java:38: warning: sun.misc.BASE64Encoder is internal proprietary API and may be removed in a future release
+    [javac]             	value = new BASE64Encoder().encode(encrypted); 
+    [javac]             	            ^
+    [javac] /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/src/com/ansell/crms/utils/webServiceSecurity/Protector.java:63: warning: sun.misc.BASE64Decoder is internal proprietary API and may be removed in a future release
+    [javac]     			byte[] decValue = cipher.doFinal(new BASE64Decoder().decodeBuffer(encrypted)); 
+    [javac]     			                                     ^
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 38 warnings
+     [copy] Copying 8 files to /var/lib/jenkins/workspace/Chemical_Guardian4.3.0/build/classe
