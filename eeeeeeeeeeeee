@@ -1,0 +1,27 @@
+Ansell_Commons_1.21] $ /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/bin/java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.12-alpha-1.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5/boot/plexus-classworlds-2.5.2.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5/conf/logging jenkins.maven3.agent.Maven35Main /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5 /var/cache/jenkins/war/WEB-INF/lib/remoting-3.23.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.12-alpha-1.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 36014
+Exception in thread "main" java.lang.UnsupportedClassVersionError: hudson/remoting/Launcher : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:803)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:442)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:64)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:354)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:348)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:347)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:401)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+	at jenkins.maven3.agent.Maven35Main.main(Maven35Main.java:133)
+	at jenkins.maven3.agent.Maven35Main.main(Maven35Main.java:64)
+ERROR: ================================================================================
+ERROR: Invalid project setup: Connection reset
+ERROR: [JENKINS-18403][JENKINS-28294] JDK 'java1.7' not supported to run Maven projects.
+ERROR: Maven projects have to be launched with a Java version greater or equal to the minimum version required by the master.
+ERROR: Use the Maven JDK Toolchains (plugin) to build your maven project with an older JDK.
+ERROR: Retrying with slave Java and setting compile/test properties to point to /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64.
+ERROR: ================================================================================
+Established TCP socket on 46099
+[Ansell_Commons_1.21] $ /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el6_9.x86_64/jre/bin/java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.12-alpha-1.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5/boot/plexus-classworlds-2.5.2.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5/conf/logging jenkins.maven3.agent.Maven35Main /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.5 /var/cache/jenkins/war/WEB-INF/lib/remoting-3.23.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.12-alpha-1.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 46099
