@@ -947,8 +947,8 @@ ProxyPreserveHost On
 #    Deny from all
     Allow from all
 </Proxy>
-#ProxyPass /gtmobile/ http://ttlvm047:9081/gtmobile/MedicalEvaluationREST/
-#ProxyPassReverse  /gtmobile/ http://ttlvm047:9081/gtmobile/MedicalEvaluationREST/
+#ProxyPass /gtmobile/ http://yyyvm047:9081/gtmobile/MedicalEvaluationREST/
+#ProxyPassReverse  /gtmobile/ http://yyyvm047:9081/gtmobile/MedicalEvaluationREST/
 
 #
 # Enable/disable the handling of HTTP/1.1 "Via:" headers.
@@ -1002,17 +1002,17 @@ ProxyVia On
 #
 
 <VirtualHost *:80>
-#ProxyPass "/guardiannext_new" "balancer://mycluster" stickysession=JSESSIONID|jsessionid scolonpathdelim=On
+#ProxyPass "/giannext_new" "balancer://mycluster" stickysession=JSESSIONID|jsessionid scolonpathdelim=On
 #<Proxy "balancer://mycluster">
-#    BalancerMember "http://192.168.102.121:18380/guardiannext_new" route=node1
-#    BalancerMember "http://192.168.102.122:18180/guardiannext_new" route=node2
+#    BalancerMember "http://z.a.102.121:18380/gnext_new" route=node1
+#    BalancerMember "http://z.a.102.122:18180/gnext_new" route=node2
 #</Proxy>
 
 </VirtualHost>
 
-#<Location /guardiannext_auto>
- #       ProxyPass http://ttlvm064.xxxxx.com:8580/guardiannext_auto
-  #      ProxyPassReverse http://ttlvm064.xxxxx.com:8580/guardiannext_auto
+#<Location /gnext_auto>
+ #       ProxyPass http://yyyvm064.xxxxx.com:8580/gnext_auto
+  #      ProxyPassReverse http://yyyvm064.xxxxx.com:8580/gnext_auto
 #</Location>
 
 
@@ -1028,8 +1028,8 @@ ProxyVia On
 
 
 #<Location /mail>
-#    ProxyPass http://192.168.2.22:8025
-#     ProxyPassReverse http://192.168.2.22:8025
+#    ProxyPass http://z.a.2.22:8025
+#     ProxyPassReverse http://z.a.2.22:8025
 #</Location>
 ##############################################################
 #################### CGOP RE-DIRECT ##########################
@@ -1045,49 +1045,49 @@ Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
 JkWorkersFile /etc/httpd/conf/worker_GN.properties
-JkMount /guardiannext_new/* worker-GN
+JkMount /gnext_new/* worker-GN
 JkLogLevel info
 
-#<Location /guardiannext_new>
+#<Location /gnext_new>
         #DocumentRoot
         #RewriteEngine On
         #RewriteRule "^/resources/?(.*)" "$0" [L]
 
-#       ProxyPass http://192.168.102.121:18380/guardiannext_new
-#       ProxyPassReverse http://192.168.102.121:18380/guardiannext_new
+#       ProxyPass http://z.a.102.121:18380/gnext_new
+#       ProxyPassReverse http://z.a.102.121:18380/gnext_new
 #</Location>
 
 
 
-<Location /crmsWeb>
-   ProxyPass http://192.168.102.121:28480/crmsWeb
-   ProxyPassReverse http://192.168.102.121:28480/crmsWeb
+<Location /cWeb>
+   ProxyPass http://z.a.102.121:28480/cWeb
+   ProxyPassReverse http://z.a.102.121:28480/cWeb
 </Location>
 
-<Location /guardiannext>
-   ProxyPass http://192.168.102.121:18280/guardiannext
-   ProxyPassReverse http://192.168.102.121:18280/guardiannext
+<Location /gnext>
+   ProxyPass http://z.a.102.121:18280/gnext
+   ProxyPassReverse http://z.a.102.121:18280/gnext
 </Location>
 
 
-<Location /adminPortal>
-   ProxyPass http://192.168.102.121:8080/adminPortal
-   ProxyPassReverse http://192.168.102.121:8080/adminPortal
+<Location /aPortal>
+   ProxyPass http://z.a.102.121:8080/aPortal
+   ProxyPassReverse http://z.a.102.121:8080/aPortal
 </Location>
 
-<Location /crmsWeb_new>
-   ProxyPass http://192.168.102.121:38180/crmsWeb_new
-   ProxyPassReverse http://192.168.102.121:38180/crmsWeb_new
+<Location /cWeb_new>
+   ProxyPass http://z.a.102.121:38180/cWeb_new
+   ProxyPassReverse http://z.a.102.121:38180/cWeb_new
 </Location>
 
 
 #<Location /informaticaMDM>
-#        ProxyPass  http://ttlvm064.xxxxx.com:12010/informaticaMDM/mdmsimulater.jsp
-#        ProxyPassReverse http://ttlvm064.xxxxx.com:12010/informaticaMDM/mdmsimulater.jsp
+#        ProxyPass  http://yyyvm064.xxxxx.com:12010/informaticaMDM/mdmsimulater.jsp
+#        ProxyPassReverse http://yyyvm064.xxxxx.com:12010/informaticaMDM/mdmsimulater.jsp
 #</Location>
 
-#<Location /guardiannext_new_dev>
-#       ProxyPass http://192.168.2.29:8880/guardiannext_new_dev
-#       ProxyPassReverse http://192.168.2.29:8880/guardiannext_new_dev
+#<Location /gnext_new_dev>
+#       ProxyPass http://z.a.2.29:8880/gnext_new_dev
+#       ProxyPassReverse http://z.a.2.29:8880/gnext_new_dev
 #</Location>
 
