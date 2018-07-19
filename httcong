@@ -1011,8 +1011,8 @@ ProxyVia On
 </VirtualHost>
 
 #<Location /guardiannext_auto>
- #       ProxyPass http://ttlvm064.trigyn.com:8580/guardiannext_auto
-  #      ProxyPassReverse http://ttlvm064.trigyn.com:8580/guardiannext_auto
+ #       ProxyPass http://ttlvm064.xxxxx.com:8580/guardiannext_auto
+  #      ProxyPassReverse http://ttlvm064.xxxxx.com:8580/guardiannext_auto
 #</Location>
 
 
@@ -1082,8 +1082,8 @@ JkLogLevel info
 
 
 #<Location /informaticaMDM>
-#        ProxyPass  http://ttlvm064.trigyn.com:12010/informaticaMDM/mdmsimulater.jsp
-#        ProxyPassReverse http://ttlvm064.trigyn.com:12010/informaticaMDM/mdmsimulater.jsp
+#        ProxyPass  http://ttlvm064.xxxxx.com:12010/informaticaMDM/mdmsimulater.jsp
+#        ProxyPassReverse http://ttlvm064.xxxxx.com:12010/informaticaMDM/mdmsimulater.jsp
 #</Location>
 
 #<Location /guardiannext_new_dev>
