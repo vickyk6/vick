@@ -1,0 +1,131 @@
+Started by user admin
+Building in workspace /var/lib/jenkins/workspace/cgop/Cgop2.1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Checking out a fresh workspace because there's no workspace at /var/lib/jenkins/workspace/cgop/Cgop2.1
+Cleaning local Directory .
+Checking out http://192.168.102.58:9080/svn/cgop/Sourcecode/branch/version2.1 at revision '2018-08-02T12:33:57.542 +0530' --quiet
+Using sole credentials vikram.kyama/****** in realm ‘<http://192.168.102.58:9080> Subversion Repository’
+At revision 2096
+
+No changes for http://192.168.102.58:9080/svn/cgop/Sourcecode/branch/version2.1 since the previous build
+Run condition [Strings match] enabling prebuild for step [Trigger/call builds on other projects]
+Strings match run condition: string 1=[AnsellCommons1.3], string 2=[AnsellCommons1.3]
+Run condition [Strings match] enabling perform for step [Trigger/call builds on other projects]
+Waiting for the completion of cgop » AnsellCommons1.3
+cgop » AnsellCommons1.3 #9 completed. Result was SUCCESS
+Build step 'Conditional step (single)' changed build result to SUCCESS
+Parsing POMs
+Established TCP socket on 40627
+[Cgop2.1] $ /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64/bin/java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-agent-1.12-alpha-1.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.2.5/boot/plexus-classworlds-2.5.2.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.2.5/conf/logging jenkins.maven3.agent.Maven32Main /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.2.5 /var/cache/jenkins/war/WEB-INF/lib/remoting-3.23.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-interceptor-1.12-alpha-1.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 40627
+Exception in thread "main" java.lang.UnsupportedClassVersionError: hudson/remoting/Launcher : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:803)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:442)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:64)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:354)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:348)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:347)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:401)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+	at jenkins.maven3.agent.Maven32Main.main(Maven32Main.java:143)
+	at jenkins.maven3.agent.Maven32Main.main(Maven32Main.java:74)
+ERROR: ================================================================================
+ERROR: Invalid project setup: Connection reset
+ERROR: [JENKINS-18403][JENKINS-28294] JDK 'java1.7' not supported to run Maven projects.
+ERROR: Maven projects have to be launched with a Java version greater or equal to the minimum version required by the master.
+ERROR: Use the Maven JDK Toolchains (plugin) to build your maven project with an older JDK.
+ERROR: Retrying with slave Java and setting compile/test properties to point to /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.181.x86_64.
+ERROR: ================================================================================
+Established TCP socket on 38459
+[Cgop2.1] $ /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el6_9.x86_64/jre/bin/java -cp /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-agent-1.12-alpha-1.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.2.5/boot/plexus-classworlds-2.5.2.jar:/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.2.5/conf/logging jenkins.maven3.agent.Maven32Main /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.2.5 /var/cache/jenkins/war/WEB-INF/lib/remoting-3.23.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven32-interceptor-1.12-alpha-1.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 38459
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f /var/lib/jenkins/workspace/cgop/Cgop2.1/pom.xml install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cgop Maven Webapp 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cgop ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ cgop ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 172 source files to /var/lib/jenkins/workspace/cgop/Cgop2.1/target/classes
+[WARNING] /var/lib/jenkins/workspace/cgop/Cgop2.1/src/main/java/app/ansell/cgop/utility/B64ImgReplacedElementFactory.java:[64,43] BASE64Decoder is internal proprietary API and may be removed in a future release
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cgop ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/cgop/Cgop2.1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ cgop ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cgop ---
+[INFO] No tests to run.
+[JENKINS] Recording test results[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.BuildInfoRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+
+[INFO] 
+[INFO] --- maven-war-plugin:3.0.0:war (default-war) @ cgop ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [cgop] in [/var/lib/jenkins/workspace/cgop/Cgop2.1/target/chemical]
+[INFO] Processing overlay [ id app.ansell:ansellCommons]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/cgop/Cgop2.1/src/main/webapp]
+[INFO] Webapp assembled in [4620 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/cgop/Cgop2.1/target/chemical.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ cgop ---
+[INFO] Installing /var/lib/jenkins/workspace/cgop/Cgop2.1/target/chemical.war to /var/lib/jenkins/.m2/repository/app/ansell/cgop/1.0/cgop-1.0.war
+[INFO] Installing /var/lib/jenkins/workspace/cgop/Cgop2.1/pom.xml to /var/lib/jenkins/.m2/repository/app/ansell/cgop/1.0/cgop-1.0.pom
+[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.MavenArtifactArchiver$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.MavenFingerprinter$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 54.430 s
+[INFO] Finished at: 2018-08-02T12:37:04+05:30
+[INFO] Final Memory: 17M/310M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving /var/lib/jenkins/workspace/cgop/Cgop2.1/pom.xml to app.ansell/cgop/1.0/cgop-1.0.pom
+[JENKINS] Archiving /var/lib/jenkins/workspace/cgop/Cgop2.1/target/chemical.war to app.ansell/cgop/1.0/cgop-1.0.war
+channel stopped
+[Cgop2.1] $ /bin/sh -xe /tmp/jenkins2292541848499150554.sh
++ sudo ssh -i /root/.ssh/id_rsa root@192.168.102.121 '/workspace/installed/tomcat-cgop-7.0.82/bin/shutdown.sh;sleep 120'
+Aug 02, 2018 12:35:46 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Could not contact localhost:8005. Tomcat may not be running.
+Aug 02, 2018 12:35:46 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:580)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.<init>(Socket.java:429)
+	at java.net.Socket.<init>(Socket.java:209)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:499)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
++ sudo ssh -i /root/.ssh/id_rsa root@192.168.102.121 'rm -rf /workspace/installed/tomcat-cgop-7.0.82/webapps/chemical*'
++ sudo scp -i /root/.ssh/id_rsa /var/lib/jenkins/workspace/cgop/Cgop2.1/target/chemical.war root@192.168.102.121:/workspace/installed/tomcat-cgop-7.0.82/webapps/
++ sudo ssh -i /root/.ssh/id_rsa root@192.168.102.121 /workspace/installed/tomcat-cgop-7.0.82/bin/startup.sh
+Tomcat started.
+Strings match run condition: string 1=[AnsellCommons1.3], string 2=[AnsellCommons1.3]
+Run condition [Strings match] enabling perform for step [Builder to mark whether executed]
+Finished: SUCCESS
