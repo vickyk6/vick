@@ -1,0 +1,111 @@
+version: '3.2'
+secrets:
+  ssl.crt:
+    external: false
+    name: ssl.crt
+  ssl.key:
+    external: false
+    name: ssl.key
+
+
+services:
+
+   jenkins:
+    image: jenkins/jenkins
+   # container_name: jenkins
+    user: root
+    labels:
+      traefik.backend: jenkins
+      traefik.frontend.headers.SSLRedirect: "true"
+      traefik.frontend.redirect.entryPoints: http,https
+      traefik.frontend.rule: Host:jenkins.ansell-trigyn.local
+      traefik.port: '7580'
+
+    volumes:
+      - /home/vikram.kyama/jenkins_home:/var/jenkins_home
+     # - /var/run/docker.sock:/var/run/docker.sock
+    #environment:
+     # JENKINS_HOST_HOME: "/data/jenkins"
+    ports:
+      - "7580:8080"
+      - "7500:5000"
+      - "7550:50000"
+
+   sonarqube:
+    image: sonarqube
+    #container_name: sonar
+   # volumes:
+     # - /home/jenkins_home:/var/jenkins_home
+     # - /var/run/docker.sock:/var/run/docker.sock
+     #environment:
+     # JENKINS_HOST_HOME: "/data/jenkins"
+    ports:
+      - "7000:9000"
+
+   nexus:
+    image: sonatype/nexus3
+
+    #container_name: nexus
+    volumes:
+      - /root/nexus-data:/nexus-data
+     # - /var/run/docker.sock:/var/run/docker.sock
+	 #environment:
+     # JENKINS_HOST_HOME: "/data/jenkins"
+    ports:
+      - "7081:8081"
+
+#   gitlab:
+#    image: gitlab/gitlab-ce
+#    hostname: 'git.ansell-trigyn.local'
+#    labels:
+#      traefik.backend: gitlab
+#      traefik.frontend.headers.SSLRedirect: "true"
+#      traefik.frontend.redirect.entryPoints: http,https
+#      traefik.frontend.rule: Host: git-ttlansellbuild.ansell-trigyn.local
+#      traefik.port: - '7080'
+#    environment:
+#     GITLAB_OMNIBUS_CONFIG: |
+#      external_url 'http://git.ansell-trigyn.local:7080'
+#      gitlab_rails['gitlab_shell_ssh_port'] = 7022
+ #   volumes:
+#     - /root/gitlab/config:/etc/gitlab
+#     - /root/gitlab/logs:/var/log/gitlab
+#     - /root/gitlab/data:/var/opt/gitlab
+
+ #   ports:
+ #    - "7443:443"
+  #   - "7080:80"
+   #  - "7022:22"
+
+
+
+
+   traefik:
+    command: --docker --docker.watch --api --logLevel=INFO --accessLog
+      --entrypoints="Name:https Address::443 Compress:True TLS:/run/secrets/ssl.crt,/run/secrets/ssl.key"
+      --entryPoints="Name:http Address::80"
+      --defaultentrypoints=http
+    deploy:
+      placement:
+        constraints:
+- node.role == manager
+      replicas: 1
+      restart_policy:
+        condition: any
+    image: traefik:1.6.5
+    labels:
+      traefik.backend: proxy
+    ports:
+    - mode: host
+      published: 80
+      target: 80
+    - mode: host
+      published: 443
+      target: 443
+    - published: 8080
+      target: 8080
+    secrets:
+    - source: ssl.crt
+    - source: ssl.key
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock:rw
